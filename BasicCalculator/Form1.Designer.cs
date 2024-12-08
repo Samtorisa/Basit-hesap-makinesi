@@ -57,7 +57,7 @@
             numberOne.TabIndex = 0;
             numberOne.Text = "1";
             numberOne.UseVisualStyleBackColor = true;
-            numberOne.Click += buttonOne;
+            numberOne.Click += numberClick;
             // 
             // numberTwo
             // 
@@ -67,7 +67,7 @@
             numberTwo.TabIndex = 1;
             numberTwo.Text = "2";
             numberTwo.UseVisualStyleBackColor = true;
-            numberTwo.Click += buttonTwo;
+            numberTwo.Click += numberClick;
             // 
             // numberThree
             // 
@@ -77,7 +77,7 @@
             numberThree.TabIndex = 2;
             numberThree.Text = "3";
             numberThree.UseVisualStyleBackColor = true;
-            numberThree.Click += buttonThree;
+            numberThree.Click += numberClick;
             // 
             // numberFour
             // 
@@ -87,7 +87,7 @@
             numberFour.TabIndex = 3;
             numberFour.Text = "4";
             numberFour.UseVisualStyleBackColor = true;
-            numberFour.Click += buttonFour;
+            numberFour.Click += numberClick;
             // 
             // numberFive
             // 
@@ -97,7 +97,7 @@
             numberFive.TabIndex = 4;
             numberFive.Text = "5";
             numberFive.UseVisualStyleBackColor = true;
-            numberFive.Click += buttonFive;
+            numberFive.Click += numberClick;
             // 
             // numberSix
             // 
@@ -107,7 +107,7 @@
             numberSix.TabIndex = 5;
             numberSix.Text = "6";
             numberSix.UseVisualStyleBackColor = true;
-            numberSix.Click += buttonSix;
+            numberSix.Click += numberClick;
             // 
             // numberSeven
             // 
@@ -117,7 +117,7 @@
             numberSeven.TabIndex = 6;
             numberSeven.Text = "7";
             numberSeven.UseVisualStyleBackColor = true;
-            numberSeven.Click += buttonSeven;
+            numberSeven.Click += numberClick;
             // 
             // numberEight
             // 
@@ -127,7 +127,7 @@
             numberEight.TabIndex = 7;
             numberEight.Text = "8";
             numberEight.UseVisualStyleBackColor = true;
-            numberEight.Click += buttonEight;
+            numberEight.Click += numberClick;
             // 
             // numberNine
             // 
@@ -137,7 +137,7 @@
             numberNine.TabIndex = 8;
             numberNine.Text = "9";
             numberNine.UseVisualStyleBackColor = true;
-            numberNine.Click += buttonNine;
+            numberNine.Click += numberClick;
             // 
             // groupBox1
             // 
@@ -172,7 +172,7 @@
             buttonClear.TabIndex = 15;
             buttonClear.Text = "CLEAR";
             buttonClear.UseVisualStyleBackColor = true;
-            buttonClear.Click += buttonClear_Click;
+            buttonClear.Click += clearButton;
             // 
             // buttonTimes
             // 
@@ -183,7 +183,7 @@
             buttonTimes.TabIndex = 11;
             buttonTimes.Text = "*";
             buttonTimes.UseVisualStyleBackColor = true;
-            buttonTimes.Click += timesButton;
+            buttonTimes.Click += numberClick;
             // 
             // buttonMinus
             // 
@@ -193,7 +193,7 @@
             buttonMinus.TabIndex = 14;
             buttonMinus.Text = "-";
             buttonMinus.UseVisualStyleBackColor = true;
-            buttonMinus.Click += MinusButton;
+            buttonMinus.Click += numberClick;
             // 
             // buttonCalculate
             // 
@@ -204,7 +204,7 @@
             buttonCalculate.TabIndex = 13;
             buttonCalculate.Text = "=";
             buttonCalculate.UseVisualStyleBackColor = true;
-            buttonCalculate.Click += buttonCalculate_Click;
+            buttonCalculate.Click += buttonEquals;
             // 
             // buttonDivide
             // 
@@ -214,7 +214,7 @@
             buttonDivide.TabIndex = 11;
             buttonDivide.Text = "/";
             buttonDivide.UseVisualStyleBackColor = true;
-            buttonDivide.Click += divideButton;
+            buttonDivide.Click += numberClick;
             // 
             // buttonPlus
             // 
@@ -224,7 +224,7 @@
             buttonPlus.TabIndex = 10;
             buttonPlus.Text = "+";
             buttonPlus.UseVisualStyleBackColor = true;
-            buttonPlus.Click += plusButton;
+            buttonPlus.Click += numberClick;
             // 
             // numberZero
             // 
@@ -234,7 +234,7 @@
             numberZero.TabIndex = 9;
             numberZero.Text = "0";
             numberZero.UseVisualStyleBackColor = true;
-            numberZero.Click += numberZero_Click;
+            numberZero.Click += numberClick;
             // 
             // textBox1
             // 
@@ -258,6 +258,7 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            Click += numberClick;
             groupBox1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
