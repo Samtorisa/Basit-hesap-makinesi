@@ -9,7 +9,6 @@ namespace BasicCalculator
     {
         
         string currentInput = "";
-        bool isResultDisplayed = false;
 
 
         private void numberClick(object sender, EventArgs e) { 
